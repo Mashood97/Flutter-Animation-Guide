@@ -31,7 +31,6 @@ class _CustomAnimState extends State<CustomAnim> {
 
             if (metrics.atEdge) {
               if (metrics.pixels == 0) {
-                print('At top');
                 setState(() {
                   height = 200;
                   // _shape = RoundedRectangleBorder(
@@ -46,8 +45,6 @@ class _CustomAnimState extends State<CustomAnim> {
                   radius = 10.0;
                 });
               }
-
-              print('At bottom');
             }
             return true;
           },
