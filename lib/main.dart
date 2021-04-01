@@ -4,6 +4,7 @@ import 'package:flutter_animations/anim/custom_anim.dart';
 import 'anim/animatedContainer.dart';
 import 'anim/animated_position.dart';
 import 'anim/animated_switcher.dart';
+import 'anim/custom_grid_animation.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,6 +68,16 @@ class Home extends StatelessWidget {
                 );
               },
               child: Text('Custom Anim'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) => GridAnimation(),
+                  ),
+                );
+              },
+              child: Text('Grid Custom Anim'),
             ),
           ],
         ),
